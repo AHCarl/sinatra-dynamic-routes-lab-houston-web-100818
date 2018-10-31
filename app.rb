@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require 'pry'
 
 class App < Sinatra::Base
   # Write your code here!
@@ -16,5 +17,6 @@ class App < Sinatra::Base
     @num = params[:number].to_i
     @ph = params[:phrase]
     "#{@num * @ph}"
+    binding.pry
   end
 end
