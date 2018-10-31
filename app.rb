@@ -28,4 +28,5 @@ class App < Sinatra::Base
     end
     "#{@result.join(' ')}."
   end
+  
 end
