@@ -18,6 +18,6 @@ class App < Sinatra::Base
     @ph = params[:phrase] + " "
     @result = []
     @num.times {@result << @ph}
-    @result
+    @result.join
   end
 end
