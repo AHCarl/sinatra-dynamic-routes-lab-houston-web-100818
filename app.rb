@@ -21,13 +21,6 @@ class App < Sinatra::Base
     @result.join
   end
   
-  # get 'say/:word1/:word2/:word3/:word4/:word5' do 
-  #   @result = []
-  #   params.each do |key, val|
-  #     @result << val
-  #   end
-  #   "#{@result.join(' ')}."
-  # end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     @return = []
@@ -35,6 +28,13 @@ class App < Sinatra::Base
       @return << value
     end
     "#{@return.join(' ')}."
+  end
+  
+  get '/:operation/:number1/:number2' do 
+    @op = params[:operation]
+    @num1 = params[:number1].to_i 
+    @num2 = params[:number2].to_i 
+    "#{@num1 @op @num2}"
   end
   
 end
