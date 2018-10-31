@@ -26,6 +26,6 @@ class App < Sinatra::Base
     params.each do |k,v|
       @result << v 
     end
-    @result.
+    "#{@result.join + " "}."
   end
 end
