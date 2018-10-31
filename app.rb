@@ -21,12 +21,12 @@ class App < Sinatra::Base
     @result.join
   end
   
-  get 'say/:word1/:word2/:word3/:word4/:word5' do 
-    @result = []
-    params.each do |key, val|
-      @result << val
-    end
-    "#{@result.join(' ')}."
-  end
+  # get 'say/:word1/:word2/:word3/:word4/:word5' do 
+  #   @result = []
+  #   params.each do |key, val|
+  #     @result << val
+  #   end
+  #   "#{@result.join(' ')}."
+  # end
   
 end
