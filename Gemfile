@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem 'sinatra'
-gem 'pry'
 gem 'rake'
 gem 'thin'
 gem 'shotgun'
